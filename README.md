@@ -5,6 +5,7 @@ Tested on Python 3.8.5
 
 ### Dependencies
 `random`, `numpy`, `OpenCV`
+
 You can install OpenCV for Python with `pip install opencv-python`.
 
 ### Recommended
