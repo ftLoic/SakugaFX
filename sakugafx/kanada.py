@@ -6,7 +6,7 @@ class Kanada:
         self.color = color
         self.x0 = x0
         self.y0 = y0
-    def circle(self, frame, size, coords):
+    def circle(self, frame, size, a, a2, coords):
         # outer lightning
         overlay = frame.copy()
         s = size + 3
@@ -15,14 +15,14 @@ class Kanada:
             frame = cv2.addWeighted(overlay, 0.3, frame, 1 - 0.3, 0)
             s += 1
         # in
-        alpha = 0.07
+        alpha = a
         overlay = frame.copy()
         s = size
         for i in range(math.floor(size/2)):
             cv2.circle(overlay, coords, s, self.color, thickness=3, lineType=cv2.LINE_AA)
             frame = cv2.addWeighted(overlay, alpha, frame, 1 - alpha, 0)
             s -= 2
-            alpha = max(0, alpha-0.0026)
+            alpha = max(0, alpha-a2)
         return frame
     def line(self, frame, size, a, coords1, coords2):
         alpha = a
