@@ -1,5 +1,5 @@
 # SakugaFX
-Generate kutsuna lightning.
+Generate some sakuga effects.
 
 Tested on Python 3.8.5
 
