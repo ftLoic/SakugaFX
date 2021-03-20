@@ -1,4 +1,4 @@
-# KutsunaGen
+# SakugaFX
 Generate kutsuna lightning.
 
 Tested on Python 3.8.5
